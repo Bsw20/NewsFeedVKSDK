@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3026447A253059C500AE0AF4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30264479253059C500AE0AF4 /* AuthService.swift */; };
 		3026448125305C2200AE0AF4 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026448025305C2200AE0AF4 /* AuthViewController.swift */; };
+		304BF7DC2571156400F4C5B4 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304BF7DB2571156400F4C5B4 /* AuthViewController.storyboard */; };
+		304BF7DF257131D800F4C5B4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BF7DE257131D800F4C5B4 /* FeedViewController.swift */; };
+		304BF7E2257131E900F4C5B4 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304BF7E1257131E900F4C5B4 /* FeedViewController.storyboard */; };
 		30718238253042C100D5A8C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30718237253042C100D5A8C6 /* AppDelegate.swift */; };
 		3071823A253042C100D5A8C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30718239253042C100D5A8C6 /* SceneDelegate.swift */; };
 		30718241253042C200D5A8C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30718240253042C200D5A8C6 /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 		3026446A2530550A00AE0AF4 /* VKSdkFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VKSdkFramework.framework; path = Carthage/Build/iOS/VKSdkFramework.framework; sourceTree = "<group>"; };
 		30264479253059C500AE0AF4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		3026448025305C2200AE0AF4 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		304BF7DB2571156400F4C5B4 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
+		304BF7DE257131D800F4C5B4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		304BF7E1257131E900F4C5B4 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
 		30718234253042C100D5A8C6 /* NewsFeedVKSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsFeedVKSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30718237253042C100D5A8C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30718239253042C100D5A8C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +75,24 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		304BF7E42571323700F4C5B4 /* FeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				304BF7DE257131D800F4C5B4 /* FeedViewController.swift */,
+				304BF7E1257131E900F4C5B4 /* FeedViewController.storyboard */,
+			);
+			path = FeedViewController;
+			sourceTree = "<group>";
+		};
+		304BF7E52571324000F4C5B4 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3026448025305C2200AE0AF4 /* AuthViewController.swift */,
+				304BF7DB2571156400F4C5B4 /* AuthViewController.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		3071822B253042C100D5A8C6 = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +120,8 @@
 				30718240253042C200D5A8C6 /* Assets.xcassets */,
 				30718242253042C200D5A8C6 /* LaunchScreen.storyboard */,
 				30718245253042C200D5A8C6 /* Info.plist */,
-				3026448025305C2200AE0AF4 /* AuthViewController.swift */,
+				304BF7E52571324000F4C5B4 /* Auth */,
+				304BF7E42571323700F4C5B4 /* FeedViewController */,
 			);
 			path = NewsFeedVKSDK;
 			sourceTree = "<group>";
@@ -161,7 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				30718244253042C200D5A8C6 /* LaunchScreen.storyboard in Resources */,
+				304BF7DC2571156400F4C5B4 /* AuthViewController.storyboard in Resources */,
 				30718241253042C200D5A8C6 /* Assets.xcassets in Resources */,
+				304BF7E2257131E900F4C5B4 /* FeedViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +243,7 @@
 			files = (
 				3026448125305C2200AE0AF4 /* AuthViewController.swift in Sources */,
 				30718238253042C100D5A8C6 /* AppDelegate.swift in Sources */,
+				304BF7DF257131D800F4C5B4 /* FeedViewController.swift in Sources */,
 				3071823A253042C100D5A8C6 /* SceneDelegate.swift in Sources */,
 				3026447A253059C500AE0AF4 /* AuthService.swift in Sources */,
 			);
