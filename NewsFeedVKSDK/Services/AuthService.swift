@@ -27,9 +27,12 @@ class AuthService : NSObject{
     }
     
     weak var delegate: AuthServiceDelegate?
+    var token: String? {
+        return VKSdk.accessToken()?.accessToken
+    }
     
     func wakeUpSession() {
-        let scope = ["offline"]
+        let scope = ["wall", "friends"]
         VKSdk.wakeUpSession(scope) { [delegate](status, error) in
             switch status {
             
