@@ -1,3 +1,3 @@
-## NewsFeedVKSDK
-# Swiftbook Course
-# News feed with VK SDK
+# NewsFeedVKSDK
+## News feed with VK SDK (Swiftbook Course)
+
