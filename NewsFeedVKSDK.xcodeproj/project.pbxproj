@@ -103,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				302A7112257BFF9E00C1AD8A /* Models */,
-				30264479253059C500AE0AF4 /* AuthService.swift */,
 				304BF7E725717B8100F4C5B4 /* NetworkService.swift */,
 				304BF7EA25717C8300F4C5B4 /* API.swift */,
 				302A7117257C034400C1AD8A /* NetworkDataFetcher.swift */,
@@ -123,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				3026448025305C2200AE0AF4 /* AuthViewController.swift */,
+				30264479253059C500AE0AF4 /* AuthService.swift */,
 				304BF7DB2571156400F4C5B4 /* AuthViewController.storyboard */,
 			);
 			path = Auth;
