@@ -12,6 +12,9 @@
 		302A7114257BFFBD00C1AD8A /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302A7113257BFFBD00C1AD8A /* FeedResponse.swift */; };
 		302A7118257C034400C1AD8A /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302A7117257C034400C1AD8A /* NetworkDataFetcher.swift */; };
 		303AB77F2580EC1400F287C2 /* RowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AB77E2580EC1400F287C2 /* RowLayout.swift */; };
+		303AB7AE2582578800F287C2 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AB7AD2582578800F287C2 /* TitleView.swift */; };
+		303AB7B2258258DE00F287C2 /* InsertableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AB7B1258258DE00F287C2 /* InsertableTextField.swift */; };
+		303AB7B52582608000F287C2 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AB7B42582608000F287C2 /* UserResponse.swift */; };
 		304BF7DC2571156400F4C5B4 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304BF7DB2571156400F4C5B4 /* AuthViewController.storyboard */; };
 		304BF7E825717B8100F4C5B4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BF7E725717B8100F4C5B4 /* NetworkService.swift */; };
 		304BF7EB25717C8300F4C5B4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BF7EA25717C8300F4C5B4 /* API.swift */; };
@@ -45,6 +48,9 @@
 		302A7113257BFFBD00C1AD8A /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
 		302A7117257C034400C1AD8A /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		303AB77E2580EC1400F287C2 /* RowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowLayout.swift; sourceTree = "<group>"; };
+		303AB7AD2582578800F287C2 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		303AB7B1258258DE00F287C2 /* InsertableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertableTextField.swift; sourceTree = "<group>"; };
+		303AB7B42582608000F287C2 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		304BF7DB2571156400F4C5B4 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
 		304BF7E725717B8100F4C5B4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		304BF7EA25717C8300F4C5B4 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -109,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				302A7112257BFF9E00C1AD8A /* Models */,
+				30264479253059C500AE0AF4 /* AuthService.swift */,
 				304BF7E725717B8100F4C5B4 /* NetworkService.swift */,
 				304BF7EA25717C8300F4C5B4 /* API.swift */,
 				302A7117257C034400C1AD8A /* NetworkDataFetcher.swift */,
@@ -120,15 +127,24 @@
 			isa = PBXGroup;
 			children = (
 				302A7113257BFFBD00C1AD8A /* FeedResponse.swift */,
+				303AB7B42582608000F287C2 /* UserResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		303AB7AC2582577300F287C2 /* TitleView */ = {
+			isa = PBXGroup;
+			children = (
+				303AB7AD2582578800F287C2 /* TitleView.swift */,
+				303AB7B1258258DE00F287C2 /* InsertableTextField.swift */,
+			);
+			path = TitleView;
 			sourceTree = "<group>";
 		};
 		304BF7E52571324000F4C5B4 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
 				3026448025305C2200AE0AF4 /* AuthViewController.swift */,
-				30264479253059C500AE0AF4 /* AuthService.swift */,
 				304BF7DB2571156400F4C5B4 /* AuthViewController.storyboard */,
 			);
 			path = Auth;
@@ -181,6 +197,7 @@
 		308A39A8257D02C4003FBD71 /* Newsfeed */ = {
 			isa = PBXGroup;
 			children = (
+				303AB7AC2582577300F287C2 /* TitleView */,
 				3076CE8D2580311600F570AD /* GalleryView */,
 				308A39CB257D32AE003FBD71 /* Cell */,
 				308A39C6257D0900003FBD71 /* NewsfeedViewController.storyboard */,
@@ -334,6 +351,7 @@
 				302A7114257BFFBD00C1AD8A /* FeedResponse.swift in Sources */,
 				308A39B4257D02F2003FBD71 /* NewsfeedViewController.swift in Sources */,
 				3026448125305C2200AE0AF4 /* AuthViewController.swift in Sources */,
+				303AB7B2258258DE00F287C2 /* InsertableTextField.swift in Sources */,
 				30718238253042C100D5A8C6 /* AppDelegate.swift in Sources */,
 				3076CE93258031BE00F570AD /* GalleryCollectionViewCell.swift in Sources */,
 				308A39B0257D02F2003FBD71 /* NewsfeedPresenter.swift in Sources */,
@@ -344,7 +362,9 @@
 				308A39DA257D7E87003FBD71 /* NewsfeedCellLayoutCalculator.swift in Sources */,
 				308A39D6257D5EF2003FBD71 /* WebImageView.swift in Sources */,
 				308A39EF257EB337003FBD71 /* Constants.swift in Sources */,
+				303AB7AE2582578800F287C2 /* TitleView.swift in Sources */,
 				308A39E9257E9D2E003FBD71 /* NewsfeedCodeCell.swift in Sources */,
+				303AB7B52582608000F287C2 /* UserResponse.swift in Sources */,
 				308A39EC257EABB0003FBD71 /* Constraints.swift in Sources */,
 				302A7118257C034400C1AD8A /* NetworkDataFetcher.swift in Sources */,
 				308A39B1257D02F2003FBD71 /* NewsfeedWorker.swift in Sources */,
