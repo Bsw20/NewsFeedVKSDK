@@ -30,14 +30,6 @@ final class NewsfeedCodeCell: UITableViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-
-//    let postLabel: UILabel = {
-//        let label = UILabel()
-//        label.numberOfLines = 0
-//        label.font = Constants.postLabelFont
-//        label.textColor = #colorLiteral(red: 0.18, green: 0.18, blue: 0.18, alpha: 1)
-//        return label
-//    }()
     
     let postLabel: UITextView = {
        let textView = UITextView()
@@ -54,7 +46,7 @@ final class NewsfeedCodeCell: UITableViewCell {
     }()
     let postImageView: WebImageView = {
         let imageView = WebImageView()
-        imageView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        imageView.backgroundColor = #colorLiteral(red: 0.8235294118, green: 0.3098039216, blue: 0.3294117647, alpha: 1)
         return imageView
     }()
 

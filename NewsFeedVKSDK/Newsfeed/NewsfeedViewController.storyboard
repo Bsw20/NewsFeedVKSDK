@@ -16,6 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WD3-q0-bms" customClass="GradientView" customModule="NewsFeedVKSDK" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jmr-tX-C8b">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -26,10 +30,14 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wsj-T8-em8"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="WD3-q0-bms" firstAttribute="top" secondItem="Wsj-T8-em8" secondAttribute="top" id="6zT-TP-N5K"/>
+                            <constraint firstItem="WD3-q0-bms" firstAttribute="leading" secondItem="Wsj-T8-em8" secondAttribute="leading" id="JKC-0k-cz5"/>
                             <constraint firstItem="Jmr-tX-C8b" firstAttribute="leading" secondItem="Wsj-T8-em8" secondAttribute="leading" id="KWI-Ne-bb5"/>
                             <constraint firstItem="Wsj-T8-em8" firstAttribute="trailing" secondItem="Jmr-tX-C8b" secondAttribute="trailing" id="Nhw-NZ-Vbk"/>
+                            <constraint firstItem="WD3-q0-bms" firstAttribute="trailing" secondItem="Wsj-T8-em8" secondAttribute="trailing" id="Xe8-jK-NkZ"/>
+                            <constraint firstItem="WD3-q0-bms" firstAttribute="bottom" secondItem="Wsj-T8-em8" secondAttribute="bottom" id="bJK-PP-kuc"/>
                             <constraint firstItem="Jmr-tX-C8b" firstAttribute="top" secondItem="Wsj-T8-em8" secondAttribute="top" id="vC1-3e-3Wu"/>
                             <constraint firstItem="Wsj-T8-em8" firstAttribute="bottom" secondItem="Jmr-tX-C8b" secondAttribute="bottom" id="x4K-y3-Okg"/>
                         </constraints>
@@ -40,15 +48,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OoM-ZD-6Ok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="126" y="158"/>
+            <point key="canvasLocation" x="124.6376811594203" y="157.36607142857142"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
