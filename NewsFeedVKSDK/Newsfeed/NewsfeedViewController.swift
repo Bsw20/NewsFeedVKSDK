@@ -17,9 +17,10 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic {
 
     var interactor: NewsfeedBusinessLogic?
   var router: (NSObjectProtocol & NewsfeedRoutingLogic)?
-    private var feedViewModel = FeedViewModel.init(cells: [])
+    private var feedViewModel = FeedViewModel.init(cells: [], footerTitle: nil)
     @IBOutlet weak var table: UITableView!
     private var titleView = TitleView()
+    private lazy var footerView = FooterView()
 
     private var refreshControl: UIRefreshControl =  {
         let refreshControl = UIRefreshControl()
@@ -65,7 +66,7 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic {
     interactor?.makeRequest(request: .getUser)
   }
     private func setupTopBar() {
-        self.navigationController?.hidesBarsOnSwipe = true
+        self.navigationController?.hidesBarsOnSwipe = false
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationItem.titleView = titleView
     }
@@ -75,11 +76,13 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic {
 
     case .displayNewsfeed(feedViewModel: let feedViewModel):
         self.feedViewModel = feedViewModel
+        footerView.setTitle(feedViewModel.footerTitle)
         table.reloadData()
-
         self.refreshControl.endRefreshing()
     case .displayUser(userViewModel: let userViewModel):
         titleView.set(userViewModel: userViewModel)
+    case .displayFooterLoader:
+        footerView.showLoader()
     }
   }
     
@@ -101,6 +104,7 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic {
         table.backgroundColor = .clear
 
         table.addSubview(refreshControl)
+        table.tableFooterView = footerView
     }
 
     @objc private func refresh() {
